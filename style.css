@@ -1,0 +1,102 @@
+
+
+*{
+    margin: 0; 
+    padding: 0;
+}
+
+#navBar{
+    border: 1px solid red;
+    padding: 1%;
+    background-color: blue;
+}
+
+h3,li{
+    color:white;
+}
+
+nav{
+  float: right;
+  margin-top: -2rem;
+  border: 1px solid red;
+  width: 10rem;
+}
+
+
+ul li{
+    list-style: none;
+    display: inline;
+    margin: 0 5%;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    body{
+        background-color: blue;
+      }
+
+      nav ul {
+        background-color: red;
+        display: none;
+      }
+
+} 
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+    body{
+        background-color: blue;
+      }
+      nav ul {
+        background-color: red;
+        display: none;
+      }
+
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+    nav{
+        display: none;
+    }
+
+
+      nav ul {
+        background-color: red;
+        display: block;
+      }
+
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+    body{
+        background-color: blue;
+      }
+
+      nav ul {
+        display: block;
+      }
+
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  
+    body{
+      background-color: blue;
+    }
+
+    #navBar{
+        background-color: purple;
+      }
+
+      nav ul {
+        display: block;
+      }
+
+}
