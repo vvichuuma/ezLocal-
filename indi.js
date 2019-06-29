@@ -1,3 +1,7 @@
+
+
+
+
 function displayMenu(){
  
   var x = document.getElementById("mobileMenu");
