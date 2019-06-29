@@ -5,10 +5,14 @@
     padding: 0;
 }
 
+#vichu{
+    font-family: 'Dancing Script', cursive;
+
+}
+
 #navBar{
-    border: 1px solid red;
     padding: 1%;
-    background-color: blue;
+    background-color: black;
 }
 
 h3,li{
@@ -17,8 +21,7 @@ h3,li{
 
 nav{
   float: right;
-  margin-top: -2rem;
-  border: 1px solid red;
+  margin-top: -2.2rem;
   width: 10rem;
 }
 
@@ -29,74 +32,122 @@ ul li{
     margin: 0 5%;
 }
 
+
+li:hover{
+  font-weight: bold; 
+  cursor: pointer;
+}
+
+#hamburger{
+    display: block;
+    text-align: end;
+    margin-right: 0.8rem;
+    margin-top:-0.4rem;
+    color:white;
+}
+
+#mobileMenu{
+    color:white;
+    display: block;
+    margin-top:1rem;
+    background-color: white;
+    display: none;
+
+}
+
+#mobileMenu h5{
+    border: 1px solid black;
+    color: rgb(32, 22, 22);
+    margin: 0; 
+    padding: 0.2rem;
+    text-align: center;
+}
+
+.code{
+    animation-name: driver; 
+    animation-duration: 0.8s;
+  }
+
+@keyframes driver{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 
-    body{
-        background-color: blue;
-      }
+ 
 
-      nav ul {
-        background-color: red;
+      nav ul{
         display: none;
       }
+
+      #hamburger{
+        display: block;
+    }
+  
 
 } 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
 
-    body{
-        background-color: blue;
-      }
-      nav ul {
-        background-color: red;
+  
+      nav ul{
         display: none;
       }
 
+      #hamburger{
+        display: block;
+    }
+
+ 
 } 
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
 
-    nav{
+    nav ul{
+        display: block;
+    }
+ 
+     #hamburger{
         display: none;
     }
-
-
-      nav ul {
-        background-color: red;
-        display: block;
-      }
-
+  
+    
 } 
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
 
-    body{
-        background-color: blue;
-      }
-
+ 
       nav ul {
         display: block;
       }
+
+      #hamburger{
+        display: none;
+    }
 
 } 
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   
-    body{
-      background-color: blue;
-    }
-
-    #navBar{
-        background-color: purple;
-      }
+  
 
       nav ul {
         display: block;
       }
+
+      #hamburger{
+        display: none;
+    }
+
 
 }
