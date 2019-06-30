@@ -32,6 +32,8 @@
 body{
     animation-name: pageRefresh; 
     animation-duration: 1s;
+    overflow-x: hidden;
+
 }
 
 #navBar_1{
