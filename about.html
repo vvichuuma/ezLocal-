@@ -7,6 +7,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="about.css">
     <link href="https://fonts.googleapis.com/css?family=Schoolbell&display=swap" rel="stylesheet">
+
+         <!-- Animation CDN:  -->
+         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
 
@@ -40,11 +43,11 @@
        </section>
 
        <section id="vichu">
-           <div id="imageVish">
+           <div id="imageVish" data-aos="slide-up">
           <img src="./img/vish.jpg" alt="" >
           </div>
 
-          <h2 id="descVish">Hey people! My name is Vishnu. I am a web developer who loves to build websites and web applications. This website which you are seeing was built on June 30th 2019. This website is the first animated website i am creating. This website is especially designed for the interview preperation at Ezlocal. I learned a lot about Css grid systems and flexbox. This is also the first site I am creating with CSS Grids and it is soo cool and I am loving it.</h2>
+          <h2 id="descVish" data-aos="fade-right"> Hey people! My name is Vishnu. I am a web developer who loves to build websites and web applications. This website which you are seeing was built on June 30th 2019. This website is the first animated website i am creating. This website is especially designed for the interview preperation at Ezlocal. I learned a lot about Css grid systems and flexbox. This is also the first site I am creating with CSS Grids and it is soo cool and I am loving it.</h2>
 
        </section>
 
@@ -55,6 +58,15 @@
    </div>
 
 <script src="about.js"></script>
+    <!-- Animation CDN: Begin -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+          once: false,
+          duration: 1200
+      });
+    </script>
+     <!-- Animation CDN: End -->
     
 </body>
 </html>

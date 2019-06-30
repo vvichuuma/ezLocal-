@@ -99,7 +99,6 @@ li a:hover{
     display: grid; 
     grid-template-columns: repeat(2,1fr);
     grid-template-areas: "box_1  box_3";
-    border: 1px solid red;
     margin-top: 5rem;
     animation-name: driver; 
     animation-duration: 1.5s;
@@ -108,7 +107,6 @@ li a:hover{
    
 #box_1{
 
-    border: 1px solid green;
     grid-area: box_1;
     display: flex;
     justify-content: center;
@@ -122,13 +120,11 @@ li a:hover{
 
 #box_2{
 
-    border: 1px solid red;
     grid-area: box_2;
 }
 
 #box_3{
 
-    border: 1px solid black;
     padding: 2rem;
     grid-area: box_3;
 }
@@ -146,7 +142,6 @@ Begin of COmpany description:  */
 
 
  .CompanyDescription{
-     border: 1px solid red;
      display: grid;
      grid-template-columns: repeat(4,1fr);
      grid-template-areas: "jim jim . ."
@@ -163,22 +158,19 @@ Begin of COmpany description:  */
     
     grid-area: jim;
     padding: 2rem;
-    border: 1px solid green;
-    color: red;
+    color:black;
 
  }
 
 #ezLocal{
   grid-area: ezLocal;
   padding: 2rem;
-  border: 1px solid red;
-  color: red;
+  color:black;
 }
 
 #location{
     grid-area: location;
     padding: 2rem;
-    border: 1px solid red;
 }
 
 #location img{
@@ -192,8 +184,7 @@ Begin of COmpany description:  */
 #locationDescription{
     grid-area: localDesc;
     padding: 2rem;
-    color: red;
-    border: 1px solid red;
+    color:black;
     font-family: 'Sacramento', cursive;
 
 }
@@ -238,12 +229,12 @@ a{
         grid-template-columns: repeat(1,1fr);
         grid-template-areas: "box_1"  
                               "box_3";
-        border: 1px solid red;
+
         margin-top: 5rem;
     }
 
     .CompanyDescription{
-        border: 1px solid red;
+
         display: grid;
         grid-template-columns: repeat(1,1fr);
         grid-template-areas: "jim"
@@ -283,12 +274,12 @@ a{
                " box_1"  
                 "box_3"; 
               
-        border: 1px solid red;
+
         margin-top: 5rem;
     }
 
     .CompanyDescription{
-        border: 1px solid red;
+
         display: grid;
         grid-template-columns: repeat(1,1fr);
         grid-template-areas: "jim"
@@ -323,7 +314,7 @@ a{
         display: grid; 
         grid-template-columns: repeat(2,1fr);
         grid-template-areas: "box_1  box_3";
-        border: 1px solid red;
+
         margin-top: 5rem;
     }
 
@@ -338,7 +329,7 @@ a{
     } */
 
     .CompanyDescription{
-        border: 1px solid red;
+
         display: grid;
         grid-template-columns: repeat(4,1fr);
         grid-template-areas: "jim jim . ."
@@ -376,7 +367,7 @@ a{
         display: grid; 
         grid-template-columns: repeat(2,1fr);
         grid-template-areas: "box_1  box_3";
-        border: 1px solid red;
+
         margin-top: 5rem;
     }
 
@@ -391,7 +382,7 @@ a{
     } */
 
     .CompanyDescription{
-        border: 1px solid red;
+
         display: grid;
         grid-template-columns: repeat(4,1fr);
         grid-template-areas: "jim jim . ."
@@ -428,7 +419,7 @@ a{
         display: grid; 
         grid-template-columns: repeat(2,1fr);
         grid-template-areas: "box_1  box_3";
-        border: 1px solid red;
+
         margin-top: 5rem;
     }
 
@@ -444,7 +435,7 @@ a{
     } */
 
     .CompanyDescription{
-        border: 1px solid red;
+
         display: grid;
         grid-template-columns: repeat(4,1fr);
         grid-template-areas: "jim jim . ."
