@@ -11,6 +11,10 @@
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Barriecito&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Mali&display=swap" rel="stylesheet">
+
+     <!-- Animation CDN:  -->
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
 <body>
     
@@ -59,13 +63,13 @@
 
        <div class="CompanyDescription">
 
-           <div id="Ji">
+           <div id="Ji" data-aos="fade-right">
                <h2 id="hthere">About Me: </h2>
                <p ><span style="font-family: 'Mali', cursive;">I Graduated with a degree in Chemistry from the university of Loyalo in the Year 1987. I Founded the company the National transink Corporation in the year 1993. I ran the day-to-day sales and support including Risk Management of over 10,000 small businesses in the credit card processing industry. </span></p>
            </div>
 
 
-           <div id="ezLocal">
+           <div id="ezLocal" data-aos="fade-left">
                 <h2 id="hthere">Ezlocal: </h2>
                  <p><span style="font-family: 'Mali', cursive;">Ezlocal helps manage and support small business. The company's primary goal is to help small business manage their online presence and support them. </span></p>
            </div>
@@ -75,11 +79,21 @@
     </div>
 
     
-
         <script src="indi.js"></script>
         <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+         <!-- Animation CDN: Begin -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init({
+              once: true,
+              duration: 1200
+          });
+        </script>
+         <!-- Animation CDN: End -->
 </body>
 </html>
