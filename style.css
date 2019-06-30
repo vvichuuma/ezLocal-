@@ -36,10 +36,22 @@ ul li{
     margin: 0 5%;
 }
 
+li{
+    list-style: none; 
+}
 
-li:hover{
+li a{
+    text-decoration: none;
+    color: white;
+}
+
+li a:hover{
   font-weight: bold; 
   cursor: pointer;
+  border: none;
+  list-style: none; 
+  color: white;
+  text-decoration: none;
 }
 
 #hamburger{
@@ -90,7 +102,7 @@ li:hover{
     border: 1px solid red;
     margin-top: 5rem;
     animation-name: driver; 
-    animation-duration: 5s;
+    animation-duration: 1.5s;
 
 }
    
@@ -136,9 +148,12 @@ Begin of COmpany description:  */
  .CompanyDescription{
      border: 1px solid red;
      display: grid;
-     grid-template-columns: repeat(2,1fr);
-     grid-template-areas: "jim ."
-                          ". ezLocal"
+     grid-template-columns: repeat(4,1fr);
+     grid-template-areas: "jim jim . ."
+                          ". . ezLocal ezLocal"
+                          ". location location ."
+                          ". localDesc localDesc ."
+
      ;
      margin-top: 10rem;
 
@@ -160,11 +175,50 @@ Begin of COmpany description:  */
   color: red;
 }
 
+#location{
+    grid-area: location;
+    padding: 2rem;
+    border: 1px solid red;
+}
+
+#location img{
+    width: 100%;
+}
+
+#GoogleMap{
+    text-align: center;
+}
+
+#locationDescription{
+    grid-area: localDesc;
+    padding: 2rem;
+    color: red;
+    border: 1px solid red;
+    font-family: 'Sacramento', cursive;
+
+}
+
+footer{
+    background-color:black;
+    padding: 1.5rem;
+}
+
+footer h6{
+    text-align: center;
+    color:white;
+}
 
 /* 
 Ending of Company Description:  */
 
+a{
+    text-decoration: none;
+    color: black;
+}
 
+.links{
+    color: black;
+}
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -194,9 +248,18 @@ Ending of Company Description:  */
         grid-template-columns: repeat(1,1fr);
         grid-template-areas: "jim"
                              "ezLocal"
+                             "location"
+                             "localDesc"
         ;
         margin-top: 10rem;
     }
+
+    #box_1 img{
+        width: 7rem;
+        border-radius: 2rem;
+        border: 2px solid black;
+    }
+
   
 
 } 
@@ -230,8 +293,16 @@ Ending of Company Description:  */
         grid-template-columns: repeat(1,1fr);
         grid-template-areas: "jim"
                              "ezLocal"
+                             "location"
+                             "localDesc"
         ;
         margin-top: 10rem;
+    }
+
+    #box_1 img{
+        width: 9rem;
+        border-radius: 2rem;
+        border: 2px solid black;
     }
 
  
@@ -256,7 +327,7 @@ Ending of Company Description:  */
         margin-top: 5rem;
     }
 
-    .CompanyDescription{
+    /* .CompanyDescription{
         border: 1px solid red;
         display: grid;
         grid-template-columns: repeat(2,1fr);
@@ -264,7 +335,27 @@ Ending of Company Description:  */
                              ". ezLocal"
         ;
         margin-top: 10rem;
+    } */
+
+    .CompanyDescription{
+        border: 1px solid red;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-areas: "jim jim . ."
+                             ". . ezLocal ezLocal"
+                             ". location location ."
+                             ". localDesc localDesc ."
+   
+        ;
+        margin-top: 10rem;
     }
+
+    #box_1 img{
+        width: 10rem;
+        border-radius: 2rem;
+        border: 2px solid black;
+    }
+
   
     
 } 
@@ -289,7 +380,7 @@ Ending of Company Description:  */
         margin-top: 5rem;
     }
 
-    .CompanyDescription{
+    /* .CompanyDescription{
         border: 1px solid red;
         display: grid;
         grid-template-columns: repeat(2,1fr);
@@ -297,7 +388,27 @@ Ending of Company Description:  */
                              ". ezLocal"
         ;
         margin-top: 10rem;
+    } */
+
+    .CompanyDescription{
+        border: 1px solid red;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-areas: "jim jim . ."
+                             ". . ezLocal ezLocal"
+                             ". location location ."
+                             ". localDesc localDesc ."
+   
+        ;
+        margin-top: 10rem;
     }
+
+    #box_1 img{
+        width: 12rem;
+        border-radius: 2rem;
+        border: 2px solid black;
+    }
+
 
 } 
 
@@ -305,7 +416,6 @@ Ending of Company Description:  */
 @media only screen and (min-width: 1200px) {
   
   
-
       nav ul {
         display: block;
       }
@@ -323,7 +433,7 @@ Ending of Company Description:  */
     }
 
 
-    .CompanyDescription{
+    /* .CompanyDescription{
         border: 1px solid red;
         display: grid;
         grid-template-columns: repeat(2,1fr);
@@ -331,7 +441,26 @@ Ending of Company Description:  */
                              ". ezLocal"
         ;
         margin-top: 10rem;
+    } */
+
+    .CompanyDescription{
+        border: 1px solid red;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-areas: "jim jim . ."
+                             ". . ezLocal ezLocal"
+                             ". location location ."
+                             ". localDesc localDesc ."
+   
+        ;
+        margin-top: 10rem;
     }
 
+
+    #box_1 img{
+        width: 14rem;
+        border-radius: 2rem;
+        border: 2px solid black;
+    }
 
 }

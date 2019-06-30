@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Barriecito&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Mali&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sacramento&display=swap" rel="stylesheet">
 
      <!-- Animation CDN:  -->
      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -26,8 +27,8 @@
             </header>
             <nav>
                 <ul>
-                    <li>Home</li>
-                    <li>About</li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
                 </ul>
                 <div id="hamburger" onclick="displayMenu()">
                         <h2>&#9776</h2>
@@ -35,16 +36,14 @@
             </nav>
 
             <div id="mobileMenu">
-                    <h5 id='home'>Home</h5>
-                    <h5>About</h5>
+                    <h5 id='home'><a href="index.html"><span class="links">Home</span></a></h5>
+                    <h5><a href="about.html"><span class="links">About</span></a></h5>
             </div>
              
        </div>
 
 
-
-
-       <div class = "Ceo">
+       <section class = "Ceo">
            <div id="box_1">
 
              <img src="./img/jim.png" alt="">
@@ -58,10 +57,10 @@
                 <p ><span style="font-family: 'Mali', cursive;">My name is Jim Tracy. I am the president of the company EZlocal. Here we help small business market their online presence and help them realise their place in the industry.</span></p>
 
              </div>
-       </div>
+            </section>
 
 
-       <div class="CompanyDescription">
+       <section class="CompanyDescription">
 
            <div id="Ji" data-aos="fade-right">
                <h2 id="hthere">About Me: </h2>
@@ -74,10 +73,27 @@
                  <p><span style="font-family: 'Mali', cursive;">Ezlocal helps manage and support small business. The company's primary goal is to help small business manage their online presence and support them. </span></p>
            </div>
 
-       </div>
+           <div id="location" data-aos="zoom-in">
+                <h2 id="hthere">Location: </h2>
+               <img src="./img/ez.png" alt="">
+               <p id="GoogleMap"><span style="font-family: 'Mali', cursive;">Google Map Location</span></p>
+           </div>
+
+           <div id="locationDescription" data-aos="flip-right">
+               <h3 style="font-family: 'Mali', cursive; color: red"> The Company is located at 377 E Butterfield Rd#300. The office is cool with great people in it. You have a kitchen where you can eat upto any flavour of pop corn you need.</h3>
+           </div>
+
+        </section>
+
+
+        <footer>
+             <h6>Vichu's Sites, vish - Web Developer &copy 2019</h6>
+        </footer>
 
     </div>
 
+
+<!-- scriptTags Begin:  -->
     
         <script src="indi.js"></script>
         <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
@@ -90,10 +106,13 @@
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>
           AOS.init({
-              once: true,
+              once: false,
               duration: 1200
           });
         </script>
          <!-- Animation CDN: End -->
+
+
+     <!-- scriptTags End:      -->
 </body>
 </html>

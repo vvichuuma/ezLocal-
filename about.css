@@ -1,0 +1,299 @@
+
+*{
+    margin: 0; 
+    padding: 0; 
+}
+
+@keyframes pageRefresh{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+
+.code{
+    animation-name: driver; 
+    animation-duration: 0.8s;
+  }
+
+@keyframes driver{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+body{
+    animation-name: pageRefresh; 
+    animation-duration: 1s;
+}
+
+#navBar_1{
+    border:1px solid red;
+    background-color: black;
+    color:white;
+    padding: 1rem;
+}
+
+#vish{
+    font-family: 'Dancing Script', cursive;
+}
+
+ul li{
+  display: inline;
+
+}
+
+nav{
+    border: 1px solid red;
+    width:13rem;
+    float: right;
+    margin-top: -2rem;
+}
+
+nav ul li{
+    margin: 0 1.5rem;
+    font-size:1.3rem;
+}
+
+nav ul li:hover{
+    font-weight: bold;
+    cursor: pointer;
+}
+
+li a{
+    text-decoration: none; 
+    color: white;
+}
+
+#vichu img{
+    width: 20rem;
+    border-radius: 6rem;
+}
+
+#vichu{
+    border:1px solid red;
+    margin-top: 2rem;
+    display: grid; 
+    grid-template-columns: repeat(5,1fr);
+
+    grid-template-areas: ". . vichuImage . ."
+                         ". vichuDesc vichuDesc vichuDesc ."
+}
+
+#imageVish{
+    grid-area: vichuImage;
+    border:1px solid green;
+    display: flex;
+    justify-content: center;
+}
+
+#imageVish img{
+    width: 100%;
+    
+}
+
+#descVish{
+    grid-area: vichuDesc;
+    border:1px solid black;
+    padding:2rem;
+    font-family: 'Schoolbell', cursive;
+
+
+}
+
+footer{
+    margin-top: 2rem;
+    border: 1px solid green;
+    padding: 0.5rem;
+    background-color: black;
+    color:white;
+}
+
+footer h2{
+    text-align: center;
+    margin-top:1.4rem;
+}
+
+#menuHamburger{
+    text-align: end;
+}
+
+#mobileMenu{
+    margin-top: 0.2rem;
+    display: none;
+    border: 1px solid red;
+    color: white;
+}
+
+#mobileMenu h3{
+    background-color:white; 
+    color: black;
+    text-align: center;
+    border:0.1rem solid black;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    html{
+        font-size: 1rem;
+    }
+
+    footer h2{
+        font-size: 1rem;
+    }
+
+    nav ul{
+        display: none;
+    }
+
+    #menuHamburger{
+        display: block;
+    }
+
+    #vichu{
+        border:1px solid red;
+        margin-top: 2rem;
+        display: grid; 
+        grid-template-columns: repeat(3,1fr);
+    
+        grid-template-areas: ". vichuImage ."
+                             "vichuDesc vichuDesc vichuDesc"
+    } 
+ 
+
+ 
+} 
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+    html{
+        font-size: 1rem;
+    }
+   
+    nav ul{
+        display: none;
+    }
+
+    #menuHamburger{
+        display: block;
+    }
+
+    #vichu{
+        border:1px solid red;
+        margin-top: 2rem;
+        display: grid; 
+        grid-template-columns: repeat(3,1fr);
+    
+        grid-template-areas: ". vichuImage ."
+                             "vichuDesc vichuDesc vichuDesc"
+    } 
+ 
+    
+
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+    html{
+        font-size: 1rem;
+    }
+
+    nav ul{
+        display: block;
+    }
+
+    #menuHamburger{
+        display: none;
+    }
+
+    #vichu{
+        border:1px solid red;
+        margin-top: 2rem;
+        display: grid; 
+        grid-template-columns: repeat(3,1fr);
+    
+        grid-template-areas: ". vichuImage ."
+                             "vichuDesc vichuDesc vichuDesc"
+    } 
+ 
+
+
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+    html{
+        font-size: 1rem;
+    }
+ 
+
+    nav ul{
+        display: block;
+    }
+
+    #menuHamburger{
+        display: none;
+    }
+
+    #vichu{
+        border:1px solid red;
+        margin-top: 2rem;
+        display: grid; 
+        grid-template-columns: repeat(5,1fr);
+    
+        grid-template-areas: ". . vichuImage . ."
+                             ". vichuDesc vichuDesc vichuDesc ."
+    } 
+ 
+
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+   html{
+       font-size: 1rem;
+   }
+
+
+    nav ul{
+        display: block;
+    }
+
+    #menuHamburger{
+        display: none;
+    }
+
+    #vichu{
+        border:1px solid red;
+        margin-top: 2rem;
+        display: grid; 
+        grid-template-columns: repeat(5,1fr);
+    
+        grid-template-areas: ". . vichuImage . ."
+                             ". vichuDesc vichuDesc vichuDesc ."
+    }
+
+    
+
+
+}
