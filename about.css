@@ -104,6 +104,7 @@ li a{
     grid-area: vichuDesc;
     padding:2rem;
     font-family: 'Schoolbell', cursive;
+    font-size: 1.5rem;
 
 
 }
@@ -114,11 +115,13 @@ footer{
     padding: 0.5rem;
     background-color: black;
     color:white;
+
 }
 
 footer h2{
     text-align: center;
     margin-top:1.4rem;
+    margin-bottom: 1rem;
 }
 
 #menuHamburger{
