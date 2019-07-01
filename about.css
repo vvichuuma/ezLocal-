@@ -5,6 +5,10 @@
     overflow-x: hidden;
 }
 
+.container{
+    min-width: 100%;
+}
+
 @keyframes pageRefresh{
     from{
         opacity: 0;
@@ -74,7 +78,7 @@ li a{
 }
 
 #vichu img{
-    width: 20rem;
+    /* width: 20rem; */
     border-radius: 6rem;
 }
 
@@ -82,6 +86,7 @@ li a{
 
     margin-top: 2rem;
     display: grid; 
+    height: 38rem;
     grid-template-columns: repeat(5,1fr);
 
     grid-template-areas: ". . vichuImage . ."
@@ -90,13 +95,12 @@ li a{
 
 #imageVish{
     grid-area: vichuImage;
-
     display: flex;
     justify-content: center;
 }
 
 #imageVish img{
-    width: 100%;
+    width: 70%;
     
 }
 
